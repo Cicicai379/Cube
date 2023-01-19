@@ -37,13 +37,14 @@ public class CubeTester {
     @Test
     public void TestSetterNegative() {
         Cube cube = new Cube(5);
-        Throwable exception = assertThrows(IllegalArgumentException.class, ()->{ cube.setSide(-1);});
+        Throwable exception = assertThrows(IllegalArgumentException.class, ()->{ cube.setSide(-1);System.out.println("A cube’s side length cannot be less than 1!");});
     }
 
     @Test
     public void TestSetterZero() {
         Cube cube = new Cube(5);
-        Throwable exception = assertThrows(IllegalArgumentException.class, ()->{ cube.setSide(0);});
+        Throwable exception = assertThrows(IllegalArgumentException.class, ()->{ cube.setSide(0); System.out.println("A cube’s side length cannot be less than 1!");});
+
     }
 
     @Test
