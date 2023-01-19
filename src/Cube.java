@@ -9,7 +9,10 @@ public class Cube {
     public int getSide(){
         return sides;
     }
-    public void setSide(int s){
+    public void setSide  (int s){
+        if(s<1){
+            throw new IllegalArgumentException("A cube’s side length cannot be less than 1!");
+        }
          sides=s;
     }
     public int getVolume(){
