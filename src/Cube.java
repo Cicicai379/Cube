@@ -17,7 +17,7 @@ public class Cube {
     }
     public int getVolume(){
        return  sides*sides*sides;
-    }
+    } //cube side=volume
     public int getSurfaceArea(){
         return  sides*sides*6;
     }
